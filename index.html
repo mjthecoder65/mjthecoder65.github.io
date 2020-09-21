@@ -23,6 +23,12 @@
             <button id='submit' type='button'>Send</button>
            </div>
         </form>
-        <script src='index.js'></script>     
+        <script>
+            const button = document.getElementById('submit');
+            button.click = function(event){
+                console.log("Submit button was clicked");
+                console.log(event);
+            }
+        </script>     
     </body>
 </html>
