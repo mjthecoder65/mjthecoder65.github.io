@@ -25,9 +25,10 @@
         </form>
         <script>
             const button = document.getElementById('submit');
-            button.click = function(event){
-                console.log("Submit button was clicked");
-                console.log(event);
+            button.addEventListener('click', submit)
+            function submit(event){
+                window.console.log("Submit button was clicked");
+                window.console.log(event);
             }
         </script>     
     </body>
