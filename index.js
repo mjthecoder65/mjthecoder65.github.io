@@ -1,5 +1,7 @@
-const button = document.getElementById('submit');
-button.click = event => {
-    console.log("Send button was clicked");
-    console.log(event);
-}
+
+ const button = document.getElementById('submit');
+ button.addEventListener('click', submit)
+ function submit(event){
+     const name = document.getElementById('name');
+     window.console.log(name.value);
+ }

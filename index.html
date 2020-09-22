@@ -2,16 +2,7 @@
 <html>
     <head>
         <title>Github pages</title>
-        <style>
-            body{
-                background-color: salmon;
-            }
-            #header{
-                color: rgb(0, 92, 128);
-                font-style: bold;
-            }
-            
-        </style>
+        <link rel='stylesheet' href='index.css'>
     </head>
     <body>
         <h1 id="header">Web Programming with Python and Javascript</h1>
@@ -23,13 +14,6 @@
             <button id='submit' type='button'>Send</button>
            </div>
         </form>
-        <script>
-            const button = document.getElementById('submit');
-            button.addEventListener('click', submit)
-            function submit(event){
-                const name = document.getElementById('name');
-                window.console.log(name.value);
-            }
-        </script>     
+        <script src='index.js'></script>     
     </body>
 </html>
