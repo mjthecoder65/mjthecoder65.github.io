@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stop Watch App</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width-device-width,initial-scale">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="styling.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text'>
+</head>
+<body>
+
+    <div class="containter-fluid">
+        <!--overlay-container-->
+        <div id="myNav" class="overlay">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#"><i class="fa fa-clock-o"></i>Clock</a>
+              <a href="#"><i class="fa fa-bell"></i>Alarm</a>
+              <a href="#"><i class="material-icons" style="font-size:100%;">timer</i>Stopwatch</a>
+            </div>
+        </div>
+          
+          <span style="color:green;font-size:40px;cursor:pointer;border-radius: 100%; " onclick="openNav()">&#9776;</span>
+        <!--Lap-->
+        <div id="lap">
+            <span id="lapminute">00</span>:
+            <span id="lapsecond">00</span>:
+            <span id="lapcentisecond">00</span>
+        </div>
+        <!--Time division-->
+        <div id="time">
+            <span id="timeminute">00</span>:
+            <span id="timesecond">00</span>:
+            <span id="timecentisecond">00</span>
+        </div>
+        <!--Controls-->
+        <div id="controlsContainer" class="row">
+            <div class="col-xs-2 col-xs-offset-4">
+                <div id="startButton" class="control">Start</div>
+                <div id="stopButton"class="control">Stop</div>
+                <div id="resumeButton"class="control">Resume</div>
+            </div> 
+            <div class="col-xs-2">
+                <div id="lapButton" class="control">Lap</div>
+                <div id="resetButton"class="control">Reset</div>
+            </div> 
+        </div>
+        <!--Adding a lap -->
+        <div id="laps"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="stopwatch.js"></script> 
+ 
+</body>
+</html>

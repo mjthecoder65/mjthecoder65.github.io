@@ -1,0 +1,104 @@
+body{
+    background: url(nature.jpg) center center fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+}
+/* title */
+#header{
+    text-align: center;
+    font-size:7vw;
+    color: whitesmoke;
+    font-style: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#lap{
+    text-align: right;
+    font-size:4vw;
+    color:white;
+}
+#time{
+    text-align: center;
+    font-size: 10vw;
+    color:#66ff99;
+}
+#controlContainer{
+    margin-bottom:100px;
+}
+.control{
+    color:white;
+    background-color:#d7A04E;
+    border-radius:100%;
+    height:9.5vw;
+    width:9.5vw;
+    text-align:center;
+    padding: 20% 0;
+    font-size:2.5vw;
+    cursor: pointer;
+}
+.control:active{
+    background-color: #fff;
+    color: #d7A04E;
+}
+#laps{
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.lap{
+    height:50px;
+    border-bottom: 0.5px solid white;
+    margin:15px;
+}
+.laptimetitle{
+    font-size: 1.5em;
+    float:left;
+}
+.laptime{
+    font-size:2em;
+    float:right;
+}
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top:0;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0, 0.9);
+    overflow-x:hidden;
+    transition: 0.5s;
+}
+.overlay-content{
+    position:relative;
+    top:25%;
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+}
+.overlay a:hover, .overlay a:focus{
+    color:#f1f1f1;
+}
+.overlay .closebtn{
+    position:absolute;
+    top:20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px){
+    .overlay a {font-size: 20px;}
+    .overlay .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
