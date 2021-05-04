@@ -172,9 +172,9 @@ h6 { font-size: 16px;}
 #profile_pic{
 	display: block;
 	margin:0 auto;
-
-	height: 200px;
-	width: 200px;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	height: 300px;
+	width: 300px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
 }
