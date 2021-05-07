@@ -1,7 +1,6 @@
 :root{
 	--mainColor:#eaeaea;
 	--secondaryColor:#fff;
-
 	--borderColor:#c1c1c1;
 
 	--mainText:black;
@@ -11,11 +10,7 @@
 
 	--previewBg:rgb(251, 249, 243, 0.8);
 	--previewShadow:#f0ead6;
-
-
 	--buttonColor:black;
-
-
 }
 
 
