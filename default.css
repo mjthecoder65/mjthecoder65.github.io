@@ -13,6 +13,13 @@
 	--buttonColor:black;
 }
 
+@keyframes example { 
+	20% { transform: rotate(15deg); } 
+	40% { transform: rotate(-10deg); } 
+	60% { transform: rotate(5deg); } 
+	80% { transform: rotate(-5deg); } 
+	100% { transform: rotate(0deg); } 
+ } 
 
 html, body{
 	padding: 0;
@@ -80,6 +87,9 @@ h6 { font-size: 16px;}
 	align-content: center;
 	min-height: 10em;
 
+}
+#greetingElement {
+	animation: example 4s infinite;
 }
 
 .intro-wrapper{
