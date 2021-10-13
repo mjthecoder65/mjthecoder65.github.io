@@ -1,0 +1,127 @@
+html{
+    background-image: url(images/mathematics.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#container{
+    height: 450px;
+    width: 550px;
+    background-color: rgb(83, 125, 189);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 5px;
+    position: relative;
+
+}
+#score{
+    background: #F1FF92;
+    color: #888E5F;
+    padding: 50px;
+    left: 500px;
+    float:right;
+    font-size: 30px;
+}
+.clear{
+    clear:both;
+}
+#correct{
+    position: absolute;
+    left:250px;
+    background-color: #42e252; 
+    color:white;
+    padding: 11px;
+    display:none;
+}
+#wrong{
+    position: absolute;
+    left:250px;
+    background-color: #be1e2c; 
+    color:white;
+    padding: 11px;
+    display:none;
+
+}
+#question{
+    width: 450px;
+    height: 150px;
+    margin: 50px auto;
+    background-color: #9DA0EA;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive, sans-serif;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color:#B481D9;
+    text-align: center;
+    margin: 0px auto;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+}
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 10px auto;
+}
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float:left;
+    margin-right: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+.box:hover, #startreset:hover{
+    background-color:#9C89F6;
+    color:white;
+}
+#box4{
+    margin-right: 0;
+    
+}
+#startreset{
+    width: 100px;
+    padding:10px;
+    background-color:seagreen;
+    color:white;
+    margin: 0px auto;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+#timeleft{
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    background-color: rgba(181, 235, 36, 0.8);
+    border-radius:5px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    /* visibility: hidden;*/
+    display:none;
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    background:linear-gradient(#F3CA6B, #F2706C);
+    color:white;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top:100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+}
