@@ -1,231 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Michael Jordan</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch The Insect</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Insect</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <div class="screen">
+      <h1>What is your "favorite" insect?</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly">
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Mosquito</p>
+            <img
+               src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+               alt="mosquito"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Spider</p>
+            <img
+               src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+               alt="spider"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Roach</p>
+            <img
+               src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+               alt="roach"
+               />
+          </button>
+        </li>
+      </ul>
+    </div>
 
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Are you annnoyed yet? <br>
+        You are playing an impossible game!!
+      </h5>
+    </div>
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/efbf0db3b5.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="default.css">
-	<link id="theme-style" rel="stylesheet" type="text/css" href="">
-</head>
-<body>
-
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1 id="greetingElement" style="margin-bottom: 0;"><span style='font-size:50px;'>&#9995;</span></h1>
-				<h1 style="margin-top: 0">I'm Michael Jordan</h1>
-			</div>
-
-
-			<div class="intro-wrapper">
-				<div class="nav-wrapper">
-
-					<a href="index.html">
-						<div class="dots-wrapper">
-							<div id="dot-1" class="browser-dot"></div>
-							<div id="dot-2" class="browser-dot"></div>
-							<div id="dot-3" class="browser-dot"></div>
-						</div>
-					</a>
-					
-
-					<ul id="navigation">
-						<li><a href="index.html#contact">Contact</a></li>
-
-					</ul>
-				</div>
-
-				<div class="left-column">
-					<img  id="profile_pic" src="images/michael.jpg">
-					<h5 style="text-align: center;line-height: 0;">Full-stack web developer</h5>
-					<h6 style="text-align: center;line-height: 0;">Based in Seoul, South Korea</h6>
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
-
-					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
-				</div>
-
-				<div class="right-column">
-
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do <span style="color: #17a2b8; font-size: 35px;">?</span></h3>
-							<p>
-								I Develop responsive websites, interactive UIs, building Restful-APIs, develop single-page applications and
-								performance optimization
-							</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-
-			<div class="about-wrapper">
-				<div class="about-me">
-					<h4>More about me</h4>
-
-					<p>I am a full-stack sofware developer and electrical engineering student at Korea university.</p>
-					<p> 
-						I passionate about computers and programming. I have a bold foundation of computer science fundamentals including data structures and algorithms 
-						that help me solve computational problems efficiently. 
-						I love  solving coding challenges, and sites like Leetcode and Hackerrank are my favorite places to hangout. 
-						As a software engineer, I love and excited to be part of a team that together develop technologies that are useful and accessible to all people.
-					</p>
-
-
-					<hr>
-
-					<h4>TOP EXPERTISE</h4>
-
-					<p>Fullstack developer with primary focus on Django + Node.js + React: <a href="files/Michael_Jordan_Resume.pdf" target="_blank">Download Resume</a></p>
-
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>JavaScript</li>
-							<li>C++</li>
-							<li>Django</li>
-							<li>React</li>
-							<li>Node Js</li>
-						</ul>
-
-						<ul>
-							<li>Firebase</li>
-							<li>MongoDB</li>
-							<li>SQL</li>
-							<li>HTML/CSS</li>
-						</ul>
-
-					</div>
-
-				</div>
-
-				
-				<div class="social-links">
-					<img id="social_img" src="images/follow.png">
-					<h3>Find me on Linkedin & Github</h3>
-					<div class="social-links-container">
-						<a target="_blank" href="https://www.linkedin.com/in/michael-jordan-99a67bb8/"><i class="fab fa-linkedin"></i></a>
-						<a target="_blank" href="https://github.com/mjthecoder65"><i class="fab fa-github"></i></a>
-					</div>
-					
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="s1">
-		<div class="main-container">
-			<h3 style="text-align: center;">Some of my recent projects</h3>
-
-			<div class="post-wrapper">
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/drawingboard.png">
-						<div class="post-preview">
-							<h6 class="post-title">Drawing Board</h6>
-							<p class="post-intro">Built using Jquery, HTML,CSS and Font Awesome</p>
-							<a target="__blank" href="projects/drawing-app/index.html">View the application</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/gmail.png">
-						<div class="post-preview">
-							<h6 class="post-title">Gmail-clone</h6>
-							<p class="post-intro">Built using React, firebase,Redux material-UI </p>
-							<a target="__blank" href="https://github.com/mjthecoder65/gmail-clone">View the source code</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/mathgame.png">
-						<div class="post-preview">
-							<h6 class="post-title">Math Game</h6>
-							<p class="post-intro">Built using Javascript, CSS and HTML</p>
-							<a target="_blank" href="projects/math-game/index.html">Play the game</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="s1">
-		<div class="main-container">
-			<h3 style="text-align: center;">Professional Work Experience</h3>
-
-			<div class="post-wrapper">
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="images/reyboard.png">
-						<div class="post-preview">
-							<h6 class="post-title">Ryeboard</h6>
-							<p class="post-intro">Worked as a Full-stack web developer</p>
-							<a target="__blank" href="https://www.ryeboard.com/">Visit the company's site</a>
-						</div>
-					</div>
-				</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form">
-				<a name="contact"></a>
-
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
-	</section> 
-
-	<script type="text/javascript" src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
