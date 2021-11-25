@@ -4,7 +4,7 @@
 :star: Follow  me on GitHub
 
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://mjthecoder65.github.io/)
-[![Letsconnect!](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/rajaprerak/)
+[![Letsconnect!](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/michael-jordan-99a67bb8/)
 
 ### Website Preview
 #### Home Page
